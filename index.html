@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fotografia Beatriz Carvalho</title>
+    <link rel="stylesheet" type="text/css"  href="estilo.css" /> 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            
+        }
+
+        main {
+            padding: 20px
+        }
+    </style>
+
+    <style>
+        body {background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(217, 221, 221), rgb(110, 108, 109));
+        }
+        nav ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+    
+    nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: #b6b3b3;
+    }
+
+    nav a.active {
+        background-color: #d6d4d4;
+        color: #ada9a9;
+    }
+    </style> 
+    <script>
+       const menuItems = document.querySelectorAll("nav a");
+
+        menuItems.forEach((item)) => {
+            item.addEventListener("click", function() {
+                menuItems.forEach((item)) => {
+                    item.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        }); 
+       
+    </script>
+</head>
+    <body>
+        
+        <header>
+        <h1>Beatriz Carvalho</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="Ensaio + de 50 anos2.html" target="_blank">Ensaio + de 50 anos</a></li>
+                    <li><a href="Ensaio de Gestante2.html" target="_blank">Ensaio de Gestante</a></li>
+                    <li><a href="Ensaio individual2.html" target="_blank">Ensaio individual</a></li>
+                    <li><a href="Ensaio poético2.html" target="_blank">Ensaio poético</a></li>
+                    <li><a href="Gastronomia2.html" target="_blank">Gastronomia</a></li>
+                    <li><a href="Projeto Florecer2.html" target="_blank">Projeto Florescer</a></li>
+                    <li><a href="Contatos.html" target="_blank">Contatos</a></li>
+                </ul>
+            </nav>
+            </menu>
+       </header>
+       <style>
+         #conteudo {
+            transition: background-color 0.5;
+         }
+
+         @keyframes fade-in {
+            0% { opacity: 0;}
+            100% { opacity: 1; }
+         }
+
+         #conteudo  {
+            animation: fade-in 1s;
+         }
+       </style>
+       <main id="conteudo">
+            <article>
+                  Eu trabalho na ideia de que o fotógrafo bom é aquele que coloca a arte e a essência de cada um. Além disso, ao meu ver a  diversidade das pessoas são as que mais importam ao fotografar!!!</p>
+            </article>
+            <br>
+                <center><video src="meu-video.mp4" width="300" controls></video></center>
+        </main>
+    </body> 
+
+    
+    
+</html>
